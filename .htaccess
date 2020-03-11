@@ -1,0 +1,20 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /TalkUp/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+
+	#ESTO
+	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+	Header set Cache-Control "max-age=2592000, public"
+	</FilesMatch>
+</ifModule>
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE application/atom+xml application/javascript application/json application/rss+xml application/xhtml+xml application/xml image/svg+xml image/x-icon text/css text/html text/plain text/x-component text/xml
+</IfModule>
+
+SetOutputFilter DEFLATE

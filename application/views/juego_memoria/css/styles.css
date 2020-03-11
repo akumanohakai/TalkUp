@@ -1,0 +1,127 @@
+body {
+	background: url("../images/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#divCartas {
+	background-color: white;
+}
+
+* {
+	font-family: 'Segoe UI', "Open Sans", sans-serif;
+}
+
+h1, h2 {
+	text-align: center;
+	text-shadow: 3px 3px black;
+	color: white;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#divCartas {
+	margin-left: 9%;
+	margin-bottom: 5px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 80%;
+	border-left: 3px solid #007E33;
+	border-right: 3px solid #007E33;
+	/*border-bottom: 1px solid black;*/
+	border-radius: 5px;
+}
+
+#divCartas button.carta {
+	padding-top: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    /*background: linear-gradient(#ef7573, #efe684);*/
+    border-radius: 5px;
+	padding-left: 5px;
+    padding-right: 0 !important;
+	background-color: white;
+    height: 110px;
+    border: 0;
+    outline: none;
+}
+
+div.front img {
+    padding-right: 5px;
+}
+
+.carta:hover {
+	transition: 0.25s;
+	/*box-shadow: 0 0 20px black;*/
+    border: 1px solid gray !important;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+div.back p {
+	margin: 0;
+	margin-top: 3px;
+	padding-left: 30px;
+}
+
+div.bottom-bar {
+	background-color: #2F2F2F;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+div.bottom-bar strong#info {
+	display: block;
+	margin-left: 0;
+	text-align: center;
+	font-size: 17px;
+}
+
+div.bottom-bar * {
+	color: white;
+	margin-left: 150px;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+div.bottom-bar .btn-danger {
+	margin-bottom: 12px;
+}
+
+div.modal-body p, h2.modal-title {
+	text-align: center;
+}
+
+.modal.animated.zoomIn {
+	-webkit-animation-duration: .6s;
+  	-moz-animation-duration: .6s;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 70%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#h1Partida {
+	text-shadow: 3px 3px 3px #cecece;
+	color: black;
+}
